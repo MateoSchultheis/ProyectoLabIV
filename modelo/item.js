@@ -19,13 +19,13 @@ const Item = database.define(
             type: sequalize.STRING(300)
         },
         iva: {
-            type: sequalize.NUMBER
+            type: sequalize.INTEGER
         },
         productoId: {
-            type: sequalize.NUMBER
+            type: sequalize.INTEGER
         },
         facturaId: {
-            type: sequalize.NUMBER
+            type: sequalize.INTEGER
         }
     }
 )
