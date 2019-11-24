@@ -4,6 +4,7 @@ import database from './conexionBD';
 
 //importamos rutas
 import clientesRutas from './ruta/cliente-ruta';
+import productosRutas from './ruta/producto-ruta';
 
 //inicilizar express
 var cors = require('cors');
@@ -14,6 +15,7 @@ app.use(express.json());
 
 //rutas
 app.use('/api/clientes', clientesRutas)
+app.use('/api/productos', productosRutas)
 
 //database.sync({ force: true })
 database.sync()
