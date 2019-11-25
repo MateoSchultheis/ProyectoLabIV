@@ -18,7 +18,7 @@ app.use(express.json());
 //rutas
 app.use('/api/clientes', clientesRutas)
 app.use('/api/productos', productosRutas)
-app.use('/api/rutas', itemRutas)
+app.use('/api/items', itemRutas)
 app.use('/api/facturas', facturasRutas)
 
 //database.sync({ force: true })
