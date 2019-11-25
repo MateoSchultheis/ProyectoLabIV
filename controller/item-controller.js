@@ -37,9 +37,9 @@ export async function obtenerItems(req, res) {
 export async function crearItem(req, res) {
     try {
         const items = await Item.create({
-            cantidad: req.body.nombre,
-            codigo: req.body.direccion,
-            descripcion: req.body.cuit,
+            cantidad: req.body.cantidad,
+            codigo: req.body.codigo,
+            descripcion: req.body.descripcion,
             iva: req.body.iva,
             productoId: req.body.productoId,
             facturaId: req.body.facturaId
