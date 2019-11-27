@@ -22,9 +22,8 @@ const Factura = database.define(
             type: sequalize.INTEGER
         },
         total: {
-            type: sequalize.INTEGER
+            type: sequalize.NUMBER
         },
-        //REVISAR ESTO DE ABAJO, FIJARTE SI TENGO QUE HACER UN PUSH DE ITEMS AQUI
         clienteId: {
             type: sequalize.INTEGER
         },

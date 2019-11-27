@@ -16,7 +16,7 @@ const Producto = database.define(
             type: sequalize.STRING(300)
         },
         precUnit: {
-            type: sequalize.INTEGER
+            type: sequalize.NUMBER
         },
     }
 )

@@ -19,7 +19,7 @@ const Item = database.define(
             type: sequalize.STRING(300)
         },
         iva: {
-            type: sequalize.FLOAT
+            type: sequalize.NUMBER
         },
         productoId: {
             type: sequalize.INTEGER
