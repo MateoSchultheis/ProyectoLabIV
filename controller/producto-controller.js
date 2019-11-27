@@ -81,13 +81,13 @@ export async function editarProducto(req, res) {
             where: { id: req.params.idProducto }
         })
 
-        const { codigo, descripcion, pu } = req.body
+        const { codigo, descripcion, precUnit } = req.body
 
         if (producto) {
             const editados = await producto.update({
                 codigo: codigo,
                 descripcion: descripcion,
-                precUnit: pu
+                precUnit: precUnit
             })
         }
     } catch (e) {
